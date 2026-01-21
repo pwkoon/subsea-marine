@@ -1,10 +1,12 @@
-import RNavbar from "@/components/RNavbar";
-import Image from "next/image";
+// import Footer from '@/components/Footer';
+// import Navbar from '@/components/Navbar';
+
+import Banner from '@/components/Banner';
 
 export default function Home() {
   return (
     <>
-      <RNavbar/>
+      <Banner />
     </>
   );
 }
