@@ -20,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full w-full">
       <body className={poppins.className}>
-        <main>{children}</main>
+        <main className="min-h-screen w-full">{children}</main>
       </body>
     </html>
   );
