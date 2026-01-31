@@ -10,21 +10,24 @@
   --color-lightBlue: #BDC4D4;
   --color-yellow: #D1CFC9;
   --color-darkGrey: #0F1A2B;
+  --text-shadow-xl: 0 5px 8px #D1CFC9; 
 }
 
-@layer utilities {
+/* wk: not using */
+/* @layer utilities {
   .container-fluid {
-    /* width: 100%; */
-    width: clamp(20rem,96vw,90rem);
-    margin: 0 auto;
+    width: 100%;
+    width: clamp(20rem,90vw,96rem);
+    margin-inline: auto;
   }
-}
+
+} */
 
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 2560px;
   position: relative;
   min-height: 100%;
 }

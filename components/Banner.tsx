@@ -31,7 +31,7 @@ export default function Banner() {
           <div
             className="
               absolute inset-x-0 bottom-0
-              h-full
+              h-4/5 md:h-full
               bg-[url('/images/ocean.png')]
               bg-cover bg-top
               z-20
@@ -50,7 +50,7 @@ export default function Banner() {
               px-[clamp(1rem,4vw,2rem)]
               py-[clamp(3rem,8vw,6rem)]
               grid md:grid-cols-3 gap-[clamp(2rem,6vw,4rem)]
-              text-yellow
+              text-yellow text-center md:text-left
             "
             >
               <div>
@@ -69,24 +69,26 @@ export default function Banner() {
                 </div>
               </div>
               <div className="flex md:flex-col items-center gap-[clamp(1.5rem,5vw,3rem)] text-balance">
-                <div>
-                  <p className="text-[clamp(0.9rem,2vw,1.5rem)] font-bold pb-2">
-                    # Professional Partnerships
-                  </p>
-                  <p className="text-[clamp(0.9rem,2vw,1.25rem)] leading-relaxed">
-                    Strong collaboration history with ports, government bodies, and engineering
-                    firms.
-                  </p>
-                </div>
+                <div className="space-y-9">
+                  <div>
+                    <p className="text-[clamp(0.9rem,2vw,1.5rem)] font-bold pb-2">
+                      # Professional Partnerships
+                    </p>
+                    <p className="text-[clamp(0.9rem,2vw,1.25rem)] leading-relaxed">
+                      Strong collaboration history with ports, government bodies, and engineering
+                      firms.
+                    </p>
+                  </div>
 
-                <div>
-                  <p className="text-[clamp(0.9rem,2vw,1.5rem)] font-bold pb-2">
-                    # Specialist Team & Equipment
-                  </p>
-                  <p className="text-[clamp(0.9rem,2vw,1.25rem)] leading-relaxed">
-                    Equipped with a highly trained diving team, marine engineers, and specialised
-                    equipment.
-                  </p>
+                  <div>
+                    <p className="text-[clamp(0.9rem,2vw,1.5rem)] font-bold pb-2">
+                      # Specialist Team & Equipment
+                    </p>
+                    <p className="text-[clamp(0.9rem,2vw,1.25rem)] leading-relaxed">
+                      Equipped with a highly trained diving team, marine engineers, and specialised
+                      equipment.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

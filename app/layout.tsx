@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full w-full">
-      <body className={poppins.className}>
+    <html lang="en" className={`${poppins.className} h-full w-full`} suppressHydrationWarning>
+      <body>
         <main className="min-h-screen w-full">{children}</main>
       </body>
     </html>
