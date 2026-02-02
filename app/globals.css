@@ -6,15 +6,15 @@
 } */
 @theme {
   --color-darkBlue: #1C2E4A;
-  --mediumBlue: #52677D;
+  --color-mediumBlue: #52677D;
   --color-lightBlue: #BDC4D4;
   --color-yellow: #D1CFC9;
   --color-darkGrey: #0F1A2B;
   --text-shadow-xl: 0 5px 8px #D1CFC9; 
 }
 
-/* wk: not using */
-/* @layer utilities {
+/* wk: not using
+@layer utilities {
   .container-fluid {
     width: 100%;
     width: clamp(20rem,90vw,96rem);
@@ -30,4 +30,57 @@ body {
   max-width: 2560px;
   position: relative;
   min-height: 100%;
+}
+
+
+/* globals.css */
+
+/* Container */
+.infinite-scroll-container {
+  @apply relative w-full;
+}
+
+/* Desktop: auto scroll track */
+.infinite-scroll-track {
+  @apply flex gap-4;
+
+  /* Auto scroll on desktop only */
+  animation: scrollX 28s linear infinite;
+}
+
+/* Keyframes for horizontal scrolling */
+@keyframes scrollX {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Pause animation on hover (desktop) */
+.infinite-scroll-track:hover {
+  animation-play-state: paused;
+}
+
+/* Mobile: touch scroll */
+@media (max-width: 768px) {
+  .infinite-scroll-container {
+    @apply overflow-x-auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .infinite-scroll-track {
+    @apply flex gap-4;
+    animation: none; /* disable auto scroll */
+  }
+
+  /* Hide scrollbar for mobile */
+  .infinite-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  .infinite-scroll-container {
+    scrollbar-width: none;
+  }
+}
+
+/* Scroll items */
+.scroll-item {
+  @apply min-w-30 sm:min-w-40 md:min-w-50 h-20 sm:h-75 rounded-xl bg-neutral-800 text-white flex items-center justify-center text-sm sm:text-base shrink-0 cursor-grab sm:cursor-auto;
 }

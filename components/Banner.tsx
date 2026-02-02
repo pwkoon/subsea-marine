@@ -3,7 +3,7 @@ import React from "react"
 export default function Banner() {
   return (
     <>
-      <section className="container-fluid relative overflow-hidden">
+      <section className="relative overflow-hidden">
         {/* HERO */}
         <div className="relative w-full min-h-[clamp(32rem,100vh,60rem)]">
           {/* SKY */}
@@ -18,11 +18,11 @@ export default function Banner() {
         min-h-[clamp(24rem,70vh,40rem)]
       "
           >
-            <p className="text-[clamp(1rem,2.5vw,1.75rem)] font-medium text-mediumBlue mb-4">
+            <p className="text-[clamp(1rem,2.5vw,1.75rem)] font-medium text-mediumBlue md:leading-0.5">
               Underwater Civil Engineering Specialist
             </p>
 
-            <h1 className="text-[clamp(2.5rem,6vw,6rem)] font-extrabold text-darkBlue">
+            <h1 className="text-[clamp(3rem,8vw,8rem)] font-extrabold text-darkBlue leading-10 md:leading-normal">
               SUBSEA MARINE
             </h1>
           </div>
@@ -36,7 +36,7 @@ export default function Banner() {
               bg-cover bg-top
               z-20
               pointer-events-none
-              translate-y-5
+              translate-y-2
             "
           />
 
