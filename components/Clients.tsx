@@ -5,8 +5,8 @@ const duplicatedClients = [...clients, ...clients, ...clients]
 
 export default function Clients() {
   return (
-    <section className="relative">
-      <div className="bg-[url('/images/homepage3.jpg')] bg-cover bg-center min-h-[clamp(32rem,96vh,72rem)] flex flex-col items-center justify-center">
+    <section className="relative overflow-hidden">
+      <div className="bg-[url('/images/homepage3.jpg')] bg-cover bg-center min-h-[clamp(32rem,96vh,72rem)] flex flex-col items-center justify-center gap-[clamp(1.5rem,5vw,3rem)]">
         <div>
           <p className="text-[clamp(2rem,4vw,5rem)] text-yellow font-extrabold">OUR CLIENTS</p>
         </div>

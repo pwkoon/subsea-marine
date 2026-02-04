@@ -10,6 +10,7 @@
   --color-lightBlue: #BDC4D4;
   --color-yellow: #D1CFC9;
   --color-darkGrey: #0F1A2B;
+  --color-darkBrown: #2D2929;
   --text-shadow-xl: 0 5px 8px #D1CFC9; 
 }
 
@@ -82,5 +83,5 @@ body {
 
 /* Scroll items */
 .scroll-item {
-  @apply min-w-30 sm:min-w-40 md:min-w-50 h-20 sm:h-75 rounded-xl bg-neutral-800 text-white flex items-center justify-center text-sm sm:text-base shrink-0 cursor-grab sm:cursor-auto;
+  @apply min-w-30 sm:min-w-40 md:min-w-50 h-20 sm:h-50 rounded-xl bg-neutral-800 text-white flex items-center justify-center text-sm sm:text-base shrink-0 cursor-grab sm:cursor-auto;
 }

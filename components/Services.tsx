@@ -23,35 +23,35 @@ const Services = forwardRef<HTMLElement>((props, ref) => {
           <p className="text-[clamp(2rem,4vw,5rem)] text-darkBlue font-extrabold">OUR SERVICES</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {servicesData.map((service, index) => (
-              <>
-                <div className="group relative w-56 h-84 overflow-hidden rounded-xl">
-                  {/* Background image */}
-                  <div
-                    key={index}
-                    className="
+              <div
+                key={index}
+                className="group relative w-56 h-44 md:h-84 overflow-hidden rounded-xl"
+              >
+                {/* Background image */}
+                <div
+                  className="
                       absolute inset-0
                       bg-cover bg-bottom
                       transition-transform duration-500 ease-out
                       group-hover:scale-110
                     "
-                    style={{
-                      backgroundImage: `url(/images/subsea${service.image}.png)`,
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-0" />
+                  style={{
+                    backgroundImage: `url(/images/subsea${service.image}.png)`,
+                  }}
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-0" />
 
-                  {/* Text overlay */}
-                  <p
-                    className="
-                  w-full relative top-30
+                {/* Text overlay */}
+                <p
+                  className="
+                  w-full h-full flex items-center justify-center relative
                   p-4
                   text-xl font-bold text-yellow
                 "
-                  >
-                    {service.title}
-                  </p>
-                </div>
-              </>
+                >
+                  {service.title}
+                </p>
+              </div>
             ))}
           </div>
         </div>
