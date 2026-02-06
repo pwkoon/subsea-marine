@@ -85,3 +85,5 @@ body {
 .scroll-item {
   @apply min-w-30 sm:min-w-40 md:min-w-50 h-20 sm:h-50 rounded-xl bg-neutral-800 text-white flex items-center justify-center text-sm sm:text-base shrink-0 cursor-grab sm:cursor-auto;
 }
+
+

@@ -1,7 +1,5 @@
-import React from 'react'
-
-const clients = [1, 2, 3, 4]
-const duplicatedClients = [...clients, ...clients, ...clients]
+const clients = [1, 2, 3, 4];
+const duplicatedClients = [...clients, ...clients, ...clients];
 
 export default function Clients() {
   return (

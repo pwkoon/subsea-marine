@@ -1,13 +1,7 @@
 import React, { forwardRef } from 'react'
+import { services } from '@/data/services';
 
-const servicesData = [
-  { title: 'Underwater Civil Engineering', image: '4' },
-  { title: 'Marine Salvage', image: '2' },
-  { title: 'Pipeline Installation & Maintenance', image: '3' },
-  { title: 'Diving Services', image: '1' },
-];
-
-const Services = forwardRef<HTMLElement>((props, ref) => {
+const Services = forwardRef<HTMLElement>((_, ref) => {
   return (
     <section ref={ref} className="relative">
       <div className="absolute inset-0 bg-[url('/images/homepage.png')] bg-cover bg-center min-h-[clamp(32rem,96vh,72rem)]" />
@@ -22,7 +16,7 @@ const Services = forwardRef<HTMLElement>((props, ref) => {
         <div className="bg-mediumBlue/75 px-[clamp(3rem,8vw,8rem)] py-[clamp(3rem,8vw,8rem)]">
           <p className="text-[clamp(2rem,4vw,5rem)] text-darkBlue font-extrabold">OUR SERVICES</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {servicesData.map((service, index) => (
+            {services.map((service, index) => (
               <div
                 key={index}
                 className="group relative w-56 h-44 md:h-84 overflow-hidden rounded-xl"
@@ -36,7 +30,7 @@ const Services = forwardRef<HTMLElement>((props, ref) => {
                       group-hover:scale-110
                     "
                   style={{
-                    backgroundImage: `url(/images/subsea${service.image}.png)`,
+                    backgroundImage: `url(${service.desc})`,
                   }}
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-0" />

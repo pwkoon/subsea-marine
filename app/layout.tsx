@@ -24,8 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.className} h-full w-full`} suppressHydrationWarning>
       <body>
-        <main className="min-h-screen w-full">{children}</main>
-        <Footer />
+        <main className="min-h-screen w-full">
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );

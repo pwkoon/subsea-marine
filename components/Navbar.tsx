@@ -21,7 +21,7 @@ export default function Navbar({ show }: NavProps) {
   return (
     <Disclosure
       as="nav"
-      className={`bg-darkGrey text-yellow fixed top-0 w-full z-50 ${show ? 'block' : 'hidden'}`}
+      className={`bg-darkGrey text-yellow fixed top-0 z-50 w-full ${show ? 'block' : 'hidden'}`}
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
