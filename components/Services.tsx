@@ -30,7 +30,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
                       group-hover:scale-110
                     "
                   style={{
-                    backgroundImage: `url(${service.desc})`,
+                    backgroundImage: `url(${service.image})`,
                   }}
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-0" />

@@ -39,7 +39,7 @@ export default function ServicesPage() {
   }, []);
 
   return (
-    <main className="relative bg-lightBlue">
+    <main className="relative bg-yellow">
       <ServiceDots
         count={services.length}
         active={active}

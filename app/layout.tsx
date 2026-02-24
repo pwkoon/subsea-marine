@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from 'next/font/google';
-import "./globals.css";
-import Navbar from '@/components/Navbar';
+import './globals.css';
 import Footer from '@/components/Footer';
 
 const poppins = Poppins({
@@ -22,9 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.className} h-full w-full`} suppressHydrationWarning>
+    <html lang="en" className={`${poppins.className} h-full`} suppressHydrationWarning>
       <body>
-        <main className="min-h-screen w-full">
+        <main className="min-h-screen">
           {children}
           <Footer />
         </main>
