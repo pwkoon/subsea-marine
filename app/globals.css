@@ -11,15 +11,6 @@
 }
 
 
-/* wk: not using
-@layer utilities {
-  .container-fluid {
-    width: 100%;
-    width: clamp(20rem,90vw,96rem);
-    margin-inline: auto;
-  }
-
-} */
 
 @layer utilities {
   .no-scrollbar {
