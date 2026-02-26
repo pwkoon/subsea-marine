@@ -1,12 +1,12 @@
 "use client"
 
-
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect } from "react";
 import { FaArrowAltCircleUp } from 'react-icons/fa';
 import { RxCross1 } from 'react-icons/rx';
 import { Project } from "@/data/projects";
+
 type ModalProps = {
   isOpen: boolean;
   onClose: () => void;
@@ -29,7 +29,7 @@ function Modal({ isOpen, onClose, project }: ModalProps) {
     <AnimatePresence mode="wait">
       {isOpen && (
         <motion.div
-          className="w-full min-h-[clamp(32rem,100vh,60rem)] bg-darkBlue py-30"
+          className="w-full min-h-[clamp(32rem,100vh,60rem)] bg-darkBlue py-30 no"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -76,76 +76,78 @@ function Modal({ isOpen, onClose, project }: ModalProps) {
               className="bg-contain bg-fixed bg-center bg-no-repeat h-80"
               style={{ backgroundImage: `url(${project.image1})` }}
             ></div>
-            {
-              project.title4 && (
-                <>
-                  <p className="text-yellow text-[clamp(0.9rem,2vw,1.25rem)] py-10">
+            {project.title4 && (
+              <>
+                <p className="text-yellow text-[clamp(0.9rem,2vw,1.25rem)] py-10">
                   <span className="font-extrabold">| </span>
                   {project.title3}
-                </p><div className="mx-auto md:grid md:grid-flow-col md:grid-rows-3 gap-4">
-                    {project.image2 && (
-                      <div className="row-span-3">
-                        <Image
-                          src={project.image2}
-                          className="border-4"
-                          width={300}
-                          height={300}
-                          alt="Subsea5" />
-                      </div>
-                    )}
-                    <div className="col-span-2">
-                      <p className="text-yellow text-[clamp(0.9rem,2vw,1.25rem)] py-5 font-extrabold text-center ">
-                        {project.title4}
-                      </p>
+                </p>
+                <div className="mx-auto md:grid md:grid-flow-col md:grid-rows-3 gap-4">
+                  {project.image2 && (
+                    <div className="row-span-3">
+                      <Image
+                        src={project.image2}
+                        className="border-4"
+                        width={300}
+                        height={300}
+                        alt="Subsea5"
+                      />
                     </div>
-                    <div
-                      className="col-span-2 row-span-2 bg-fill md:bg-fixed bg-center bg-no-repeat"
-                      style={{ backgroundImage: `url(${project.image3})` }}
-                    ></div>
-                  </div><div className="py-[clamp(3rem,8vw,6rem)]">
-                    <p className="text-yellow text-[clamp(0.9rem,2vw,1.25rem)] py-8 w-2/3 mx-auto">
-                      {project.para1}
+                  )}
+                  <div className="col-span-2">
+                    <p className="text-yellow text-[clamp(0.9rem,2vw,1.25rem)] py-5 font-extrabold text-center ">
+                      {project.title4}
                     </p>
-                    <p className="text-yellow text-[clamp(0.9rem,2vw,1.25rem)] w-2/3 mx-auto">
-                      {project.para2}
-                    </p>
-                  </div><div
-                    className="bg-contain bg-fixed bg-center bg-no-repeat flex items-center justify-center"
-                    style={{ backgroundImage: `url(${project.image4})` }}
+                  </div>
+                  <div
+                    className="col-span-2 row-span-2 bg-fill md:bg-fixed bg-center bg-no-repeat"
+                    style={{ backgroundImage: `url(${project.image3})` }}
+                  ></div>
+                </div>
+                <div className="py-[clamp(3rem,8vw,6rem)]">
+                  <p className="text-yellow text-[clamp(0.9rem,2vw,1.25rem)] py-8 w-2/3 mx-auto">
+                    {project.para1}
+                  </p>
+                  <p className="text-yellow text-[clamp(0.9rem,2vw,1.25rem)] w-2/3 mx-auto">
+                    {project.para2}
+                  </p>
+                </div>
+                <div
+                  className="bg-contain bg-fixed bg-center bg-no-repeat flex items-center justify-center"
+                  style={{ backgroundImage: `url(${project.image4})` }}
+                >
+                  <motion.p
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut' }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="text-[clamp(0.9rem,20vw,44rem)] text-darkBlue"
                   >
+                    |
+                  </motion.p>
+                  <div>
                     <motion.p
-                      initial={{ opacity: 0, x: -100 }}
+                      initial={{ opacity: 0, x: 100 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5, ease: 'easeOut' }}
                       viewport={{ once: true, amount: 0.3 }}
-                      className="text-[clamp(0.9rem,20vw,44rem)] text-darkBlue"
+                      className="text-darkBlue text-[clamp(0.9rem,2vw,1.25rem)] mx-auto"
                     >
-                      |
+                      {project.para3}
                     </motion.p>
-                    <div>
-                      <motion.p
-                        initial={{ opacity: 0, y: -100 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, ease: 'easeOut' }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        className="text-darkBlue text-[clamp(0.9rem,2vw,1.25rem)] mx-auto"
-                      >
-                        {project.para3}
-                      </motion.p>
-                      <motion.p
-                        initial={{ opacity: 0, y: 100 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, ease: 'easeOut' }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        className="text-darkBlue text-[clamp(0.9rem,2vw,1.25rem)] mx-auto py-10"
-                      >
-                        {project.para4}
-                      </motion.p>
-                    </div>
-                  </div></>
-
-              )
-            } 
+                    <motion.p
+                      initial={{ opacity: 0, x: 100 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, ease: 'easeOut' }}
+                      viewport={{ once: true, amount: 0.3 }}
+                      className="text-darkBlue text-[clamp(0.9rem,2vw,1.25rem)] mx-auto py-10"
+                    >
+                      {project.para4}
+                    </motion.p>
+                  </div>
+                </div>
+              </>
+            )}
             {/* back and up button */}
             <div className="flex justify-between text-yellow py-10">
               <p

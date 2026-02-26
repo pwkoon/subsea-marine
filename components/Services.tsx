@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react'
 import { services } from '@/data/services';
+import Image from 'next/image';
 
 const Services = forwardRef<HTMLElement>((_, ref) => {
   return (
@@ -22,17 +23,24 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
                 className="group relative w-56 h-44 md:h-84 overflow-hidden rounded-xl"
               >
                 {/* Background image */}
-                <div
-                  className="
-                      absolute inset-0
-                      bg-cover bg-bottom
-                      transition-transform duration-500 ease-out
-                      group-hover:scale-110
-                    "
-                  style={{
-                    backgroundImage: `url(${service.image})`,
-                  }}
-                />
+                <div className="absolute inset-0 overflow-hidden">
+                  {service.image && (
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="
+                        object-cover 
+                        object-bottom
+                        transition-transform 
+                        duration-500 
+                        ease-out 
+                        group-hover:scale-110
+                      "
+                    />
+                  )}
+                </div>
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-0" />
 
                 {/* Text overlay */}

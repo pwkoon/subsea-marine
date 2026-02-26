@@ -29,10 +29,10 @@ export const projects: Project[] = [
       'During the building of the Kapar Power Station, Subsea Marine was engaged by a Dutch firm Ballast-Nedam Construction in working at the Cofferdam for one year.',
     para4:
       'Before the Commissioning of the Hydro Electric Power Plant in Tasik Kenyir, we completed the cleaning of debris at the intake leading to the Turbine an assignment engaged by Snowny Mountain Engineering Consultant of Australia.',
-    image1: '/images/subsea9.png',
-    image2: '/images/subsea5.png',
-    image3: '/images/subsea12.png',
-    image4: '/images/subsea11.png',
+    image1: '/images/subsea9.webp',
+    image2: '/images/subsea5.webp',
+    image3: '/images/subsea12.webp',
+    image4: '/images/subsea11.webp',
   },
   {
     title1: 'Port & Marine Infrastructure',
@@ -48,22 +48,22 @@ export const projects: Project[] = [
     para3: '',
     para4:
       'Executed several special assignments under key figures such as retired GM Rajasingham, KC Phang, and Datuk Captain David Padman.',
-    image1: '/images/subsea2.png',
-    image2: '/images/subsea3.png',
-    image3: '/images/subsea4.png',
-    image4: '/images/subsea9.png',
+    image1: '/images/subsea2.webp',
+    image2: '/images/subsea3.webp',
+    image3: '/images/subsea4.webp',
+    image4: '/images/subsea9.webp',
   },
   {
     title1: 'Emergency Marine Response & Salvage',
     title2:
       'In a major accident at Westport, where a vessel rammed and damaged Dolphin piles, Subsea Marine was called upon to salvage the broken structures. The operation required the mobilisation of a 300-ton heavy lift sheerleg crane from Singapore, showcasing our logistical and operational capability under urgent conditions.',
-    image1: '/images/subsea15.png',
+    image1: '/images/subsea15.webp',
   },
   {
     title1: 'Military Collaboration',
     title2:
       'Carried out the deepest dive ever recorded by Malaysian military divers (280 feet) in the salvage of a Nuri helicopter that crashed 55 nautical miles off Penang, resulting in the recovery of debris and human remains. This project stands as a testament to our technical competence and national-level trust.',
-    image1: '/images/subsea15.png',
+    image1: '/images/subsea15.webp',
   },
   {
     title1: 'Salvage & Recovery Operations',
@@ -78,8 +78,8 @@ export const projects: Project[] = [
     para3:
       'During the Salvage of a Sunken Coastal Vessel by a client to secured the contract in South Port, Subsea provided Divers for the successful Salvage of that Coastal Vessel.',
     para4: '',
-    image1: '/images/subsea15.png',
-    image2: '/images/subsea19.png',
+    image1: '/images/subsea15.webp',
+    image2: '/images/subsea19.webp',
     image3: '/images/subsea20.png',
     image4: '/images/subsea21.png',
   },
@@ -101,6 +101,6 @@ export const projects: Project[] = [
     title1: 'Replacement of underwater pipeline',
     title2:
       'RECENT PROJECTS - Recently completed the replacement of a damaged underwater pipeline at the estuary of Sungai Terusan, near Pulau Ketam. This involved both diving and mechanical operations to ensure minimum disruption to the local utility supply.',
-    image1: '/images/subsea1.png',
+    image1: '/images/subsea1.webp',
   },
 ];

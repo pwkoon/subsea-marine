@@ -19,9 +19,6 @@ function Homepage() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-
-
-  
   return (
     <>
       <Banner />

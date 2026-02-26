@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Banner() {
   return (
     <>
@@ -5,7 +7,7 @@ export default function Banner() {
         {/* HERO */}
         <div className="relative w-full min-h-[clamp(32rem,100vh,60rem)]">
           {/* SKY */}
-          <div className="absolute inset-0 bg-[url('/images/sky.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('/images/sky.webp')] bg-cover bg-center" />
 
           {/* HERO TEXT */}
           <div
@@ -26,17 +28,15 @@ export default function Banner() {
           </div>
 
           {/* 🌊 OCEAN OVERLAY */}
-          <div
-            className="
-              absolute inset-x-0 bottom-0
-              h-4/5 md:h-full
-              bg-[url('/images/ocean.png')]
-              bg-cover bg-top
-              z-20
-              pointer-events-none
-              translate-y-2
-            "
-          />
+          <div className="absolute inset-x-0 bottom-0 h-4/5 md:h-full z-20 pointer-events-none translate-y-2">
+            <Image
+              src="/images/ocean.webp"
+              alt="Ocean background"
+              fill
+              priority
+              className="object-cover object-top"
+            />
+          </div>
 
           {/* OCEAN CONTENT (normal flow, NOT absolute) */}
           <div className="relative z-30">
