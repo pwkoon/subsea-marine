@@ -37,7 +37,7 @@ function Modal({ isOpen, onClose, project }: ModalProps) {
           id="top"
         >
           <motion.div
-            className="absolute inset-0 bg-black/50"
+            className="absolute inset-0 bg-black/75"
             onClick={onClose}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
