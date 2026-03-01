@@ -19,6 +19,10 @@ function Homepage() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  useEffect(() => {
+    console.log('CLIENT WORKING');
+  }, []);
+
   return (
     <>
       <Banner />

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import Footer from '@/components/Footer';
-// import { headers } from 'next/headers';
-// import Script from 'next/script';
+import { headers } from 'next/headers';
+import Script from 'next/script';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -22,8 +22,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // const headerList = await headers();
-  // const nonce = headerList.get('x-nonce') ?? '';
+  const headerList = await headers();
+  const nonce = headerList.get('x-nonce') ?? '';
 
   return (
     <html lang="en" className={`${poppins.className} h-full`} suppressHydrationWarning>
@@ -31,6 +31,7 @@ export default async function RootLayout({
         <main className="min-h-screen">
           {children}
           <Footer />
+          <Script nonce={nonce} />
         </main>
       </body>
     </html>
