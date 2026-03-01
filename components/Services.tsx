@@ -1,6 +1,6 @@
-import React, { forwardRef } from 'react'
-import { services } from '@/data/services';
 import Image from 'next/image';
+import { forwardRef } from 'react';
+import { services } from '@/data/services';
 
 const Services = forwardRef<HTMLElement>((_, ref) => {
   return (
@@ -64,4 +64,4 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
 Services.displayName = 'Services';
 
-export default Services
+export default Services;

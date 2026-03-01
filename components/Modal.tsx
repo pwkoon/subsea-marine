@@ -1,8 +1,8 @@
 "use client"
 
-import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect } from "react";
+import { motion, AnimatePresence } from 'framer-motion';
 import { FaArrowAltCircleUp } from 'react-icons/fa';
 import { RxCross1 } from 'react-icons/rx';
 import { Project } from "@/data/projects";

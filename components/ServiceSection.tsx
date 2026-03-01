@@ -1,8 +1,8 @@
 'use client';
 
-import { forwardRef, useEffect } from 'react';
-import { color, motion, useAnimate, useInView } from 'framer-motion';
 import Image from 'next/image';
+import { forwardRef, useEffect } from 'react';
+import { motion, useAnimate, useInView } from 'framer-motion';
 
 type Props = {
   service: {
