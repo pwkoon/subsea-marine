@@ -15,6 +15,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Subsea Marine Engineering',
   description: 'Underwater Civil Engineering Specialist',
+  icons: {
+    icon: '/images/logo-subsea.png', // Your favicon
+    shortcut: '/images/logo-subsea.png', // Optional for shortcut icon
+  },
 };
 
 export default async function RootLayout({

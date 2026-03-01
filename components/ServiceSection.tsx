@@ -51,7 +51,7 @@ const ServiceSection = forwardRef<HTMLDivElement, Props>(({ service }, ref) => {
 
         {/* Text (animated) */}
         <div ref={scope} className="flex flex-col justify-center text-white">
-          <h2 className="text-[clamp(1.2rem,2vw,3rem)] font-bold mb-4 opacity-0 text-darkBlue">
+          <h2 className="text-[clamp(1.2rem,2vw,3rem)] font-bold mb-4 opacity-0 text-darkBlue bg-yellow w-fit text-nowrap">
             {service.title}
           </h2>
           <p className="text-[clamp(0.9rem,2vw,1.25rem)] text-white/90 opacity-0">{service.desc}</p>

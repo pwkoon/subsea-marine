@@ -80,8 +80,8 @@ export const projects: Project[] = [
     para4: '',
     image1: '/images/subsea15.webp',
     image2: '/images/subsea19.webp',
-    image3: '/images/subsea20.png',
-    image4: '/images/subsea21.png',
+    image3: '/images/subsea20.webp',
+    image4: '/images/subsea21.webp',
   },
   {
     title1: 'Infrastructure & Utility Projects',
@@ -89,13 +89,13 @@ export const projects: Project[] = [
       'Played a key role in the development of Putrajaya, laying pipelines across the lake and installing a 400mm sewerage line for the central treatment plant.',
     title3:
       'Partnered with KWH Pipe of Finland to execute an 18-kilometre pipeline installation from Pulau Indah to Pulau Ketam, overcoming challenging tidal and seabed conditions.',
-    image1: '/images/subsea23.png',
+    image1: '/images/subsea23.webp',
   },
   {
     title1: 'Power Sector Maintenance',
     title2:
       'Nominated underwater contractor for two major power stations in Tanjung Keling and Pengkalan Balak, Melaka. Subsea Marine has consistently delivered periodic underwater inspection, maintenance,and emergency works in these critical energy facilities.',
-    image1: '/images/subsea25.png',
+    image1: '/images/subsea25.webp',
   },
   {
     title1: 'Replacement of underwater pipeline',

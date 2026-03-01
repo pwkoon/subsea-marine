@@ -16,7 +16,7 @@ function About() {
                 alt="Subsea5"
               />
             </div>
-            <div className="relative w-60 h-80 lg:w-90 lg:h-120 lg:col-span-2 mx-auto">
+            <div className="relative w-70 h-80 lg:w-90 lg:h-120 lg:col-span-2 mx-auto">
               <Image
                 src="/images/subsea7.webp"
                 fill
@@ -38,20 +38,20 @@ function About() {
           <p className="text-[clamp(3rem,9vw,10rem)] font-extrabold text-darkBlue text-center">
             about <span className="text-transparent [-webkit-text-stroke:3px_#1C2E4A]">us</span>
           </p>
-          <p className="mx-auto w-55 md:w-1/2 text-yellow font-normal text-[clamp(0.9rem,2vw,1.5rem)] pb-10">
+          <p className="mx-auto w-80 md:w-1/2 text-yellow font-normal text-[clamp(0.9rem,2vw,1.5rem)] pb-10">
             Subsea Marine was established in 1978, at a time when Malaysia&apos;s marine and
             underwater engineering industry was still in its infancy.
           </p>
-          <p className="mx-auto w-55 md:w-1/2 text-yellow font-normal text-[clamp(0.9rem,2vw,1.5rem)] pb-10">
+          <p className="mx-auto w-80 md:w-1/2 text-yellow font-normal text-[clamp(0.9rem,2vw,1.5rem)] pb-10">
             Since then, the company has evolved into a{' '}
             <span className="bg-darkBlue font-bold">trusted and experienced service provider </span>
             in the field of underwater civil engineering and marine support services.
           </p>
-          <p className="mx-auto w-55 md:w-1/2 text-yellow font-normal text-[clamp(0.9rem,2vw,1.5rem)] pb-10">
+          <p className="mx-auto w-80 md:w-1/2 text-yellow font-normal text-[clamp(0.9rem,2vw,1.5rem)] pb-10">
             Over the decades, Subsea Marine has successfully undertaken and completed numerous
             complex and high-risk projects, serving both public and private sectors across Malaysia.
           </p>
-          <p className="mx-auto w-55 md:w-1/2 text-yellow font-normal text-[clamp(0.9rem,2vw,1.5rem)] pb-10">
+          <p className="mx-auto w-80 md:w-1/2 text-yellow font-normal text-[clamp(0.9rem,2vw,1.5rem)] pb-10">
             Our work spans a wide range of services including{' '}
             <span className="bg-darkBlue font-bold">underwater inspections</span>,
             <span>cutting and demolition</span>,{' '}

@@ -8,15 +8,7 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      colors: {
-        darkBlue: '#1C2E4A',
-        mediumBlue: '#52677D',
-        lightBlue: '#BDC4D4',
-        yellow: '#D1CFC9',
-        darkGrey: '#0F1A2B',
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };

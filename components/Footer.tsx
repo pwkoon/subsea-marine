@@ -16,7 +16,7 @@ export default function Footer() {
       >
         <div
           className="grid grid-cols-1
-    @[1000px]:grid-cols-4"
+    @[1000px]:grid-cols-4 text-[clamp(1rem,2vw,1.25rem)]"
         >
           <div className="pb-10">
             <h1 className="text-3xl font-bold">SUBSEA MARINE</h1>

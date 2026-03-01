@@ -22,7 +22,7 @@ function Projects() {
       <div className="absolute z-50 w-full mx-auto">
         <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} project={selectedProject} />
       </div>
-      <div className="relative w-full min-h-[clamp(32rem,100vh,60rem)] bg-mediumBlue py-10">
+      <div className="relative w-full min-h-[clamp(32rem,100vh,60rem)] bg-mediumBlue py-20 md:py-10">
         <p className="text-[clamp(3rem,9vw,10rem)] font-extrabold text-darkBlue text-center pb-5">
           our <span className="text-transparent [-webkit-text-stroke:3px_#1C2E4A]">projects</span>
         </p>

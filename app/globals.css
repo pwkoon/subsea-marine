@@ -10,8 +10,6 @@
   --text-shadow-xl: 0 5px 8px #D1CFC9; 
 }
 
-
-
 @layer utilities {
   .no-scrollbar {
     overflow: auto;             /* enable scrolling */
@@ -85,7 +83,7 @@ body {
 
 /* Scroll items */
 .scroll-item {
-  @apply min-w-30 sm:min-w-40 md:min-w-50 h-20 sm:h-50 rounded-xl bg-neutral-800 text-white flex items-center justify-center text-sm sm:text-base shrink-0 cursor-grab sm:cursor-auto;
+  @apply min-w-30 sm:min-w-40 md:min-w-50 h-20 sm:h-50 rounded-xl bg-black/50 text-white flex items-center justify-center text-sm sm:text-base shrink-0 cursor-grab sm:cursor-crosshair;
 }
 
 
