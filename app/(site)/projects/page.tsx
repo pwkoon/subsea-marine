@@ -19,7 +19,7 @@ function Projects() {
 
   return (
     <>
-      <div className="absolute z-50 no-scrollbar">
+      <div className="absolute z-50 w-full mx-auto">
         <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} project={selectedProject} />
       </div>
       <div className="relative w-full min-h-[clamp(32rem,100vh,60rem)] bg-mediumBlue py-10">

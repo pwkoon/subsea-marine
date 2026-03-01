@@ -29,7 +29,7 @@ function Modal({ isOpen, onClose, project }: ModalProps) {
     <AnimatePresence mode="wait">
       {isOpen && (
         <motion.div
-          className="w-full min-h-[clamp(32rem,100vh,60rem)] bg-darkBlue py-30 no"
+          className="w-full min-h-[clamp(32rem,100vh,60rem)] bg-darkBlue py-30"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

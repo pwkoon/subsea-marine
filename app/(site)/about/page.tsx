@@ -9,7 +9,7 @@ function About() {
           <div className="grid md:grid-cols-3 lg:grid-cols-4 md:gap-5">
             <div className="hidden md:flex w-54 h-77">
               <Image
-                src="/images/subsea5.png"
+                src="/images/subsea5.webp"
                 className="border-4 border-r-yellow border-b-yellow"
                 width={300}
                 height={300}
@@ -18,7 +18,7 @@ function About() {
             </div>
             <div className="relative w-60 h-80 lg:w-90 lg:h-120 lg:col-span-2 mx-auto">
               <Image
-                src="/images/subsea7.png"
+                src="/images/subsea7.webp"
                 fill
                 className="object-cover border-4 border-l-yellow border-b-yellow"
                 alt="Subsea7"
@@ -26,7 +26,7 @@ function About() {
             </div>
             <div className="hidden md:flex relative w-54 h-77 lg:top-80 lg:w-40 lg:h-60">
               <Image
-                src="/images/subsea10.png"
+                src="/images/subsea10.webp"
                 fill
                 className="object-contain border-4 border-l-yellow border-t-yellow"
                 alt="Subsea10"
