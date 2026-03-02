@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { PiGearSixBold } from 'react-icons/pi';
+
 
 export default function Banner() {
   return (
@@ -15,7 +17,7 @@ export default function Banner() {
         relative z-10
         flex flex-col items-center justify-center text-center
         px-[clamp(1rem,4vw,2rem)]
-        min-h-[clamp(24rem,70vh,40rem)]
+        min-h-[clamp(10rem,70vh,40rem)]
       "
           >
             <p className="text-[clamp(1rem,2.5vw,1.75rem)] font-medium text-mediumBlue md:leading-0.5">
@@ -28,7 +30,7 @@ export default function Banner() {
           </div>
 
           {/* 🌊 OCEAN OVERLAY */}
-          <div className="absolute inset-x-0 bottom-0 h-4/5 md:h-full z-20 pointer-events-none translate-y-2">
+          <div className="absolute inset-x-0 bottom-0 h-11/12 md:h-full z-20 pointer-events-none translate-y-2">
             <Image
               src="/images/ocean.webp"
               alt="Ocean background"
@@ -37,7 +39,9 @@ export default function Banner() {
               className="object-cover object-top"
             />
           </div>
-
+          {/* <a href="#who">
+            <PiGearSixBold className="text-4xl text-darkBlue mx-auto relative z-30 bottom-30 cursor-pointer" />
+          </a> */}
           {/* OCEAN CONTENT (normal flow, NOT absolute) */}
           <div className="relative z-30">
             <div

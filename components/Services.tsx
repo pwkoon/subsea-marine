@@ -14,8 +14,10 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
         min-h-[clamp(24rem,70vh,40rem)] translate-y-40
       "
       >
-        <div className="bg-mediumBlue/75 px-[clamp(3rem,8vw,8rem)] py-[clamp(3rem,8vw,8rem)]">
-          <p className="text-[clamp(2rem,4vw,5rem)] text-darkBlue font-extrabold">OUR SERVICES</p>
+        <div className="bg-mediumBlue/75 px-[clamp(3rem,8vw,8rem)] py-[clamp(3rem,8vw,5rem)]">
+          <p className="text-[clamp(2rem,4vw,5rem)] text-darkBlue font-extrabold py-[clamp(1rem,20vw,2rem)]">
+            OUR SERVICES
+          </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div

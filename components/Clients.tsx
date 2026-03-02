@@ -26,14 +26,14 @@ export default function Clients() {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="bg-[url('/images/homepage3.jpg')] bg-cover bg-center min-h-[clamp(32rem,96vh,72rem)] flex flex-col items-center justify-center gap-[clamp(1.5rem,5vw,3rem)]">
-        <div>
+      <div className="bg-[url('/images/homepage3.jpg')] bg-cover bg-center min-h-[clamp(40rem,96vh,72rem)] flex flex-col items-center justify-center gap-[clamp(1.5rem,5vw,3rem)]">
+        <div className="pt-[clamp(6rem,10vw,3rem)]">
           <p className="text-[clamp(2rem,4vw,5rem)] text-yellow font-extrabold">OUR CLIENTS</p>
         </div>
 
         {isMobile ? (
           // Mobile layout
-          <div className="grid grid-cols-3 gap-5 p-5">
+          <div className="grid grid-cols-3 gap-5 px-5">
             {clients.map((client, index) => (
               <div key={index} className="relative w-30 h-40">
                 <Image src={client} alt={`Client ${index}`} fill className="object-contain" />
